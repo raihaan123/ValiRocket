@@ -6,7 +6,7 @@ name: Valispace update
 on:
   repository_dispatch:
     types: 
-      - hook1
+      - vali.update
 
 jobs:
   build:
@@ -32,4 +32,4 @@ jobs:
     - name: Response
       run: |
         python src/response.py
-        'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+        echo "payload: ${{ toJson(github.event.client_payload) }}"
