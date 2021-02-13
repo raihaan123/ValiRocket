@@ -32,4 +32,4 @@ jobs:
     - name: Response
       run: |
         python src/response.py
-        echo ${{ github.event.client_payload }}
+        echo ${{ github.event.client_payload.unit }}
