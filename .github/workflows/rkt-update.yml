@@ -23,4 +23,6 @@ jobs:
 
     - name: Parsing changes
       run: |
-        python src/OR_update.py ${{ secrets.TEST }}
+        python src/OR_update.py $ENV{TOKEN}
+      env:
+        TOKEN: ${{ secrets.TEST }}
