@@ -15,7 +15,7 @@ import XPath
 
 user = "raihaan.usman19"
 # passwd = str(sys.argv)
-print(os.environ)
+print(os.getenv('TEST_VAR'))
 
 # print("Connecting to Valispace...")
 # globalV.vs = valispace.API(url='iclrocketry.valispace.com',
