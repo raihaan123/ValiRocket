@@ -1,4 +1,4 @@
 # ValiRocket
-Valispace and OpenRocket integration, refactored to use GitHub actions
+### By ICL Rocketry
 
-ICL Rocketry
+Valispace and OpenRocket integration, refactored to use GitHub actions
