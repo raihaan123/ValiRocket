@@ -25,6 +25,6 @@ jobs:
     - name: Parsing changes
       run: python src/OR_update.py
       env:
-        TEST_VAR: ${{ secrets.TEST }}
+        TEST_VAR: ${{ secrets.VSP }}
 
 
