@@ -1,12 +1,9 @@
 # Raihaan Usman
 # This workflow will install Python dependencies, read the JSON data from Valispace and run the merger tool.
 
-name: Valispace Update
+name: OpenRocket Update
 
-on:
-  repository_dispatch:
-    types: 
-      - vali.update
+on: push
 
 jobs:
   build:
@@ -26,4 +23,4 @@ jobs:
 
     - name: Parsing changes
       run: |
-        echo "payload: ${{ toJson(github.event.client_payload) }}"
+        python src/OR_update.py ${{ secrets.VSP }}

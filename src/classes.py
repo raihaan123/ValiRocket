@@ -4,18 +4,20 @@ Created on Tue Jul 14 23:54:48 2020
 
 @author: Raihaan
 """
+import globalV
+
 
 # Component API call class
 class component:
-    
+
     def __init__(self, name, parent, project):
-        
-        self.name    = name
-        self.parent  = parent
+
+        self.name = str(name)
+        self.parent = parent
         self.project = project
-    
+
     def push(self, valispace):
-        
+
         valispace.post_data(type='component', data="""{
             "name": \"""" + self.name + """\",
             "parent": """ + str(self.parent) + """,
@@ -24,22 +26,23 @@ class component:
               9
             ]
         }""")
-            
-        return(valispace.get_component_by_name(unique_name = self.name, project_name = "Sporadic_Impulse_COTS2020")['id'])
 
-        
+        print("here")
+        return(valispace.get_component_by_name(unique_name=self.name, 
+                            project_name=globalV.project_name)['id'])
+
 
 # Vali API call class
 class vali:
-    
+
     def __init__(self, name, parent, value):
-        
+
         self.parent = str(parent)
-        self.name   = name
-        self.value  = str(value)
-    
+        self.name = name
+        self.value = str(value)
+
     def push(self, valispace):
-        
+
         valispace.post_data(type='vali', data="""{
             "shortname": \"""" + self.name + """\",
             "formula": """ + self.value + """,
@@ -48,17 +51,18 @@ class vali:
               9
             ]
         }""")
-            
+
+
 class textvali:
-    
+
     def __init__(self, name, parent, text):
-        
+
         self.parent = str(parent)
-        self.name   = name
-        self.text  = text
-    
+        self.name = name
+        self.text = text
+
     def push(self, valispace):
-        
+
         valispace.post_data(type='textvali', data="""{
             "shortname": \"""" + self.name + """\",
             "text": \"""" + self.text + """\",
