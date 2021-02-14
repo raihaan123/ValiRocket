@@ -1,7 +1,7 @@
 # Raihaan Usman
 # This workflow will install Python dependencies, read the JSON data from Valispace and run the merger tool.
 
-name: Valispace Update
+name: Valispace_Update
 
 on:
   repository_dispatch:
