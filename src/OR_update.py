@@ -14,16 +14,17 @@ import XPath
 
 user = "raihaan.usman19"
 passwd = str(sys.argv)
+print(passwd)
 
-print("Connecting to Valispace...")
-globalV.vs = valispace.API(url='iclrocketry.valispace.com',
-                            username=user, password=passwd)
-print("Connected!")
+# print("Connecting to Valispace...")
+# globalV.vs = valispace.API(url='iclrocketry.valispace.com',
+#                             username=user, password=passwd)
+# print("Connected!")
 
-print("Running XPath...")
-globalV.project_id = globalV.vs.get_project_by_name(name=globalV.project_name)[0]['id']
+# print("Running XPath...")
+# globalV.project_id = globalV.vs.get_project_by_name(name=globalV.project_name)[0]['id']
 
-try:
-    XPath.unpack(int(globalV.project_id), globalV.file, globalV.vs)
-except:
-    print("Rocket file already exists")
+# try:
+#     XPath.unpack(int(globalV.project_id), globalV.file, globalV.vs)
+# except:
+#     print("Rocket file already exists")

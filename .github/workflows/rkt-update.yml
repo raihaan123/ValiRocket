@@ -23,4 +23,4 @@ jobs:
 
     - name: Parsing changes
       run: |
-        python src/OR_update.py ${{ secrets.VSP }}
+        python src/OR_update.py ${{ secrets.TEST }}
