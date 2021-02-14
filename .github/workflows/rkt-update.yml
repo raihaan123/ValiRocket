@@ -1,7 +1,7 @@
 # Raihaan Usman
 # This workflow will install Python dependencies, read the JSON data from Valispace and run the merger tool.
 
-name: OpenRocket Update
+name: OpenRocket_Update
 
 on: push
 
