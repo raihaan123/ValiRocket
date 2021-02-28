@@ -9,12 +9,11 @@ Created on Thu Jul 16 12:42:49 2020
 
 import xml.etree.ElementTree as ET
 from classes import component, vali, textvali
-import urllib
 
 # Initialise the XML structure, push the main component
 
 
-def unpack(project, file, vs):
+def unpack(project, file):
 
     tree = ET.parse(file)
     root = tree.getroot()[1][0]
@@ -24,14 +23,15 @@ def unpack(project, file, vs):
         components.text = components.text.replace(" ", "_")
 
     rocket = component([i.text for i in root.iter('Name')][0], "null", project)
-    parent = rocket.push(vs)
+    parent = rocket.push()
 
     # Ready for pushing to Valispace
     for child in root[27]:
-        pusher(child, parent, project, vs)
+        pusher(child, parent, project)
+        print(child)
 
 
-def pusher(child, parent, project, vs):
+def pusher(child, parent):
     subparts = 0
     name = child.findall('Name')[0]
     child.tag = name.text
@@ -42,8 +42,8 @@ def pusher(child, parent, project, vs):
     print(child.tag)
 
     # Instantiate the component object
-    comp = component(str(child.tag), parent, project)
-    uid = comp.push(vs)
+    comp = component(str(child.tag), parent)
+    uid = comp.push()
 
     for baby in child:
         if baby.tag == "AttachedParts":
@@ -63,8 +63,8 @@ def pusher(child, parent, project, vs):
             val = textvali(baby.tag, uid, baby.text)
         except TypeError:
             val = textvali(baby.tag, uid, "Not defined")
-        val.push(vs)
+        val.push()
 
     if subparts == 1:
         for i in range(0, len(temp)):
-            pusher(temp[i], uid, project, vs)
+            pusher(temp[i], uid)

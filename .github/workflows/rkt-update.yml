@@ -26,5 +26,3 @@ jobs:
       run: python src/OR_update.py
       env:
         TEST_VAR: ${{ secrets.VSP }}
-
-
