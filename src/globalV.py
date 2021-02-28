@@ -26,7 +26,7 @@ vs = valispace.API(url='iclrocketry.valispace.com',
                         username=user, password=passwd)
 print("Connected!")
 
-project_id = vs.get_project_by_name(name=globalV.project_name)[0]['id']
+project_id = vs.get_project_by_name(name=project_name)[0]['id']
 root = 0
 textvali_id = 0
 
