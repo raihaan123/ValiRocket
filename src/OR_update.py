@@ -13,29 +13,18 @@ import os
 print("Running first push...")
 
 try:
-    first_push.fpush()
-
-    # Pushing the updated parsed file
-    # os.system("git config --local user.email \"action@github.com\"")
-    # os.system("git config --local user.name \"github-actions\"")
-    # os.system("git add --all")
-    # os.system("git commit -m \"ValiRocket sync\" -a")
-    # os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
-
-except Exception:
-    print("Rocket file already exists")
+    # First attempt is to apply first push
+    # Switch to Production branch
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
     os.system("git checkout -t -b Production")
-    # os.system("git checkout Production")
 
-    with open("./a.file", "w+") as f:
-        f.write("This is a file! Pls find")
+    first_push.fpush()
 
-    print(os.system("ls -a"))
-
-    # Pushing the updated parsed file - QUICK TEST REMOVE LATER
-
+    # Pushing the updated parsed file
     os.system("git add --all")
     os.system("git commit -m \"ValiRocket sync\" -a")
     os.system(f"git push -f https://{token}@github.com/{git_user}/{repo}.git")
+
+except Exception:
+    print("Rocket file already exists! Checking for updates...")
