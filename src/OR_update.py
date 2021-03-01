@@ -26,7 +26,7 @@ except Exception:
     print("Rocket file already exists")
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
-    os.system("git checkout -t -b develop origin/Production")
+    os.system("git checkout -t -b Production")
     # os.system("git checkout Production")
 
     with open("./a.file", "w+") as f:
