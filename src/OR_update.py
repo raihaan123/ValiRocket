@@ -38,4 +38,4 @@ except Exception:
 
     os.system("git add --all")
     os.system("git commit -m \"ValiRocket sync\" -a")
-    os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
+    os.system(f"git push -f https://{token}@github.com/{git_user}/{repo}.git")
