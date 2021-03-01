@@ -17,10 +17,10 @@ try:
 
     # Pushing the updated parsed file
     os.system("git config --local user.email \"action@github.com\"")
-    os.system("git config --local user.name \"github-actions\")
+    os.system("git config --local user.name \"github-actions\"")
     os.system("git checkout -b Production")
-    os.system("git add --all)
-    os.system("git commit -m \"ValiRocket sync\" -a)
+    os.system("git add --all")
+    os.system("git commit -m \"ValiRocket sync\" -a")
     os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
 
 except Exception:
