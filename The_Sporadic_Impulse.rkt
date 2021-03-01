@@ -7,28 +7,6 @@
             <DisplayFlags>7</DisplayFlags>
             <ViewType>0</ViewType>
             <ViewStageCount>3</ViewStageCount>
-            <ViewTypeEdit>0</ViewTypeEdit>
-            <ViewStageCountEdit>3</ViewStageCountEdit>
-            <ZoomFactor>0.0</ZoomFactor>
-            <ZoomFactorEdit>0.0</ZoomFactorEdit>
-            <ScrollPosX>0</ScrollPosX>
-            <ScrollPosY>0</ScrollPosY>
-            <ScrollPosXEdit>0</ScrollPosXEdit>
-            <ScrollPosYEdit>0</ScrollPosYEdit>
-            <ThreeDFlags>0</ThreeDFlags>
-            <ThreeDFlagsEdit>0</ThreeDFlagsEdit>
-            <LastSerialNumber>7</LastSerialNumber>
-            <Stage3Mass>0.0</Stage3Mass>
-            <Stage2Mass>0.0</Stage2Mass>
-            <Stage1Mass>0.0</Stage1Mass>
-            <Stage3CG>2170.742509903104</Stage3CG>
-            <Stage2CGAlone>0.0</Stage2CGAlone>
-            <Stage1CGAlone>0.0</Stage1CGAlone>
-            <Stage321CG>0.0</Stage321CG>
-            <Stage32CG>0.0</Stage32CG>
-            <CPCalcFlags>1</CPCalcFlags>
-            <CPSimFlags>1</CPSimFlags>
-            <UseKnownMass>0</UseKnownMass>
             <Stage3Parts>
                 <NoseCone>
                     <KnownMass>256.38771358863</KnownMass>
@@ -36,25 +14,6 @@
                     <Material>Cardboard</Material>
                     <Name>Nose cone</Name>
                     <KnownCG>0.0</KnownCG>
-                    <UseKnownCG>0</UseKnownCG>
-                    <Xb>0.0</Xb>
-                    <CalcMass>256.38771358863</CalcMass>
-                    <CalcCG>274.8207933024227</CalcCG>
-                    <DensityType>0</DensityType>
-                    <RadialLoc>0.0</RadialLoc>
-                    <RadialAngle>0.0</RadialAngle>
-                    <LocationMode>0</LocationMode>
-                    <Len>480.0</Len>
-                    <FinishCode>2</FinishCode>
-                    <SerialNo>0</SerialNo>
-                    <ShapeCode>3</ShapeCode>
-                    <ConstructionType>1</ConstructionType>
-                    <WallThickness>2.0</WallThickness>
-                    <ShapeParameter>0.0</ShapeParameter>
-                    <AttachedParts/>
-                    <BaseDia>160.0</BaseDia>
-                    <ShoulderLen>0.0</ShoulderLen>
-                    <ShoulderOD>0.0</ShoulderOD>
                 </NoseCone>
                 <BodyTube>
                     <KnownMass>461.66332363032916</KnownMass>
@@ -62,43 +21,6 @@
                     <Material>Polycarbonate (Lexan)</Material>
                     <Name>Polycarbonate Tube</Name>
                     <KnownCG>0.0</KnownCG>
-                    <UseKnownCG>0</UseKnownCG>
-                    <Xb>0.0</Xb>
-                    <CalcMass>461.66332363032916</CalcMass>
-                    <CalcCG>130.0</CalcCG>
-                    <DensityType>0</DensityType>
-                    <RadialLoc>0.0</RadialLoc>
-                    <RadialAngle>0.0</RadialAngle>
-                    <LocationMode>0</LocationMode>
-                    <Len>260.0</Len>
-                    <FinishCode>2</FinishCode>
-                    <SerialNo>1</SerialNo>
-                    <OD>160.0</OD>
-                    <ID>154.0</ID>
-                    <IsMotorMount>0</IsMotorMount>
-                    <MotorDia>154.0</MotorDia>
-                    <EngineOverhang>0.0</EngineOverhang>
-                    <IsInsideTube>0</IsInsideTube>
-                    <AttachedParts>
-                        <MassObject>
-                            <KnownMass>4000.0</KnownMass>
-                            <Density>0.0</Density>
-                            <Material></Material>
-                            <Name>Payload</Name>
-                            <KnownCG>-125.0</KnownCG>
-                            <UseKnownCG>1</UseKnownCG>
-                            <Xb>-125.0</Xb>
-                            <CalcMass>0.0</CalcMass>
-                            <CalcCG>0.0</CalcCG>
-                            <DensityType>0</DensityType>
-                            <RadialLoc>0.0</RadialLoc>
-                            <RadialAngle>0.0</RadialAngle>
-                            <LocationMode>0</LocationMode>
-                            <Len>300.0</Len>
-                            <FinishCode>0</FinishCode>
-                            <SerialNo>2</SerialNo>
-                            <TypeCode>0</TypeCode>
-                        </MassObject>
                     </AttachedParts>
                 </BodyTube>
                 <BodyTube>
@@ -107,123 +29,12 @@
                     <Material>Kraft phenolic</Material>
                     <Name>Body tube AFT</Name>
                     <KnownCG>0.0</KnownCG>
-                    <UseKnownCG>0</UseKnownCG>
-                    <Xb>0.0</Xb>
-                    <CalcMass>707.3295859557427</CalcMass>
-                    <CalcCG>375.0</CalcCG>
-                    <DensityType>0</DensityType>
-                    <RadialLoc>0.0</RadialLoc>
-                    <RadialAngle>0.0</RadialAngle>
-                    <LocationMode>0</LocationMode>
-                    <Len>750.0</Len>
-                    <FinishCode>2</FinishCode>
-                    <SerialNo>3</SerialNo>
-                    <OD>160.0</OD>
-                    <ID>156.0</ID>
-                    <IsMotorMount>0</IsMotorMount>
-                    <MotorDia>156.0</MotorDia>
-                    <EngineOverhang>0.0</EngineOverhang>
-                    <IsInsideTube>0</IsInsideTube>
                     <AttachedParts>
                         <BodyTube>
                             <KnownMass>600.0</KnownMass>
                             <Density>680.0</Density>
                             <Material>Cardboard</Material>
                             <Name>Inner Tube Engine</Name>
-                            <KnownCG>0.0</KnownCG>
-                            <UseKnownCG>1</UseKnownCG>
-                            <Xb>-0.0</Xb>
-                            <CalcMass>1031.517066392391</CalcMass>
-                            <CalcCG>0.0</CalcCG>
-                            <DensityType>0</DensityType>
-                            <RadialLoc>0.0</RadialLoc>
-                            <RadialAngle>0.0</RadialAngle>
-                            <LocationMode>2</LocationMode>
-                            <Len>595.199999999999</Len>
-                            <FinishCode>0</FinishCode>
-                            <SerialNo>4</SerialNo>
-                            <OD>153.0</OD>
-                            <ID>142.0</ID>
-                            <IsMotorMount>1</IsMotorMount>
-                            <MotorDia>142.0</MotorDia>
-                            <EngineOverhang>0.0</EngineOverhang>
-                            <IsInsideTube>1</IsInsideTube>
-                            <AttachedParts/>
-                        </BodyTube>
-                        <CustomFinSet>
-                            <KnownMass>1650.0</KnownMass>
-                            <Density>2700.0</Density>
-                            <Material>Aluminum</Material>
-                            <Name>Freeform fin set</Name>
-                            <KnownCG>0.0</KnownCG>
-                            <UseKnownCG>1</UseKnownCG>
-                            <Xb>-0.0</Xb>
-                            <CalcMass>994.6800000000001</CalcMass>
-                            <CalcCG>0.0</CalcCG>
-                            <DensityType>0</DensityType>
-                            <RadialLoc>0.0</RadialLoc>
-                            <RadialAngle>0.7853981633974483</RadialAngle>
-                            <LocationMode>2</LocationMode>
-                            <Len>0.0</Len>
-                            <FinishCode>2</FinishCode>
-                            <SerialNo>5</SerialNo>
-                            <FinCount>4</FinCount>
-                            <RootChord>0.0</RootChord>
-                            <TipChord>0.0</TipChord>
-                            <SemiSpan>0.0</SemiSpan>
-                            <SweepDistance>0.0</SweepDistance>
-                            <Thickness>3.0</Thickness>
-                            <ShapeCode>2</ShapeCode>
-                            <TipShapeCode>0</TipShapeCode>
-                            <TabLength>50.0</TabLength>
-                            <TabDepth>0.0</TabDepth>
-                            <TabOffset>0.0</TabOffset>
-                            <SweepMode>1</SweepMode>
-                            <CantAngle>0.0</CantAngle>
-                            <PointList>290.0,0.0|290.0,30.0|274.99999999999994,130.0|124.99999999999997,130.0|0.0,30.0|0.0,0.0|</PointList>
-                        </CustomFinSet>
-                        <MassObject>
-                            <KnownMass>1500.0</KnownMass>
-                            <Density>0.0</Density>
-                            <Material></Material>
-                            <Name>Fill Feed System</Name>
-                            <KnownCG>-350.00000000000006</KnownCG>
-                            <UseKnownCG>1</UseKnownCG>
-                            <Xb>-350.00000000000006</Xb>
-                            <CalcMass>0.0</CalcMass>
-                            <CalcCG>0.0</CalcCG>
-                            <DensityType>0</DensityType>
-                            <RadialLoc>0.0</RadialLoc>
-                            <RadialAngle>0.0</RadialAngle>
-                            <LocationMode>0</LocationMode>
-                            <Len>310.00000000000006</Len>
-                            <FinishCode>0</FinishCode>
-                            <SerialNo>6</SerialNo>
-                            <TypeCode>0</TypeCode>
-                        </MassObject>
-                        <BodyTube>
-                            <KnownMass>48.29067731539014</KnownMass>
-                            <Density>680.0</Density>
-                            <Material>Cardboard</Material>
-                            <Name>Inner Tube Engine 2</Name>
-                            <KnownCG>0.0</KnownCG>
-                            <UseKnownCG>0</UseKnownCG>
-                            <Xb>-0.0</Xb>
-                            <CalcMass>48.29067731539014</CalcMass>
-                            <CalcCG>330.0</CalcCG>
-                            <DensityType>0</DensityType>
-                            <RadialLoc>0.0</RadialLoc>
-                            <RadialAngle>0.0</RadialAngle>
-                            <LocationMode>2</LocationMode>
-                            <Len>660.0</Len>
-                            <FinishCode>0</FinishCode>
-                            <SerialNo>7</SerialNo>
-                            <OD>69.0</OD>
-                            <ID>68.0</ID>
-                            <IsMotorMount>1</IsMotorMount>
-                            <MotorDia>68.0</MotorDia>
-                            <EngineOverhang>0.0</EngineOverhang>
-                            <IsInsideTube>1</IsInsideTube>
                             <AttachedParts/>
                         </BodyTube>
                     </AttachedParts>
