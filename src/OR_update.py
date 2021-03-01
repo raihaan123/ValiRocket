@@ -13,7 +13,6 @@ import os
 print("Running first push...")
 
 try:
-    os.system("git checkout -b Production")
     first_push.fpush()
 
     # Pushing the updated parsed file
