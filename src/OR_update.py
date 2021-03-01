@@ -16,7 +16,7 @@ try:
     os.system("git checkout -b Production")
     first_push.fpush()
 
-    with open("a.file", "w+") as f:
+    with open("./a.file", "w+") as f:
         f.write("This is a file! Pls find")
 
     # Pushing the updated parsed file
