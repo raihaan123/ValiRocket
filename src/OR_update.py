@@ -16,6 +16,9 @@ try:
     os.system("git checkout -b Production")
     first_push.fpush()
 
+    with open("a.file", "w+") as f:
+        f.write("This is a file! Pls find")
+
     # Pushing the updated parsed file
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
