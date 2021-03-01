@@ -3,7 +3,10 @@
 
 name: OpenRocket_Update
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -25,4 +28,5 @@ jobs:
     - name: Parsing changes
       run: python src/OR_update.py
       env:
-        TEST_VAR: ${{ secrets.VSP }}
+        VSP: ${{ secrets.VSP }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}

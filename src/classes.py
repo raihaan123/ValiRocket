@@ -60,7 +60,7 @@ class vali:
         self.push()
 
     def push(self):
-        
+
         from globalV import vs, project_name
 
         data="""{
