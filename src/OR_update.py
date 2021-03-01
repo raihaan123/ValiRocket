@@ -31,9 +31,9 @@ except Exception:
     print(os.system("ls -a"))
 
     # Pushing the updated parsed file - QUICK TEST REMOVE LATER
-    os.system("git checkout Production")
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
+    os.system("git checkout Production")
     os.system("git add --all")
     os.system("git commit -m \"ValiRocket sync\" -a")
     os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
