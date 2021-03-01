@@ -19,6 +19,8 @@ try:
     with open("./a.file", "w+") as f:
         f.write("This is a file! Pls find")
 
+    print(os.system("ls -a"))
+
     # Pushing the updated parsed file
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
