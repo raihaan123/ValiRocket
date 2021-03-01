@@ -32,6 +32,7 @@ except Exception:
     print(os.system("ls -a"))
 
     # Pushing the updated parsed file - QUICK TEST REMOVE LATER
+    os.system("git checkout -b Production")
     os.system("git config --local user.email \"action@github.com\"")
     os.system("git config --local user.name \"github-actions\"")
     os.system("git add --all")
