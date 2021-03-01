@@ -15,14 +15,13 @@ print("Running first push...")
 try:
     first_push.fpush()
 
+    # Pushing the updated parsed file
+    os.system("git config --local user.email \"action@github.com\"")
+    os.system("git config --local user.name \"github-actions\"")
+    os.system("git checkout -b Production")
+    os.system("git add --all")
+    os.system("git commit -m \"ValiRocket sync\" -a")
+    os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
+
 except Exception:
     print("Rocket file already exists")
-
-
-# Pushing the updated parsed file
-print(os.system("git config --local user.email \"action@github.com\""))
-print(os.system("git config --local user.name \"github-actions\""))
-print(os.system("git checkout -b Production"))
-print(os.system("git add --all"))
-print(os.system("git commit -m \"ValiRocket sync\" -a"))
-print(os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git"))
