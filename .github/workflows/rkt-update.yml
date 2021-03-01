@@ -30,3 +30,6 @@ jobs:
       env:
         VSP: ${{ secrets.VSP }}
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Finding a lost file
+      run: find .
