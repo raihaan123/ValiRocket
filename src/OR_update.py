@@ -17,11 +17,11 @@ try:
     first_push.fpush()
 
     # Pushing the updated parsed file
-    os.system("git config --local user.email \"action@github.com\"")
-    os.system("git config --local user.name \"github-actions\"")
-    os.system("git add --all")
-    os.system("git commit -m \"ValiRocket sync\" -a")
-    os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
+    # os.system("git config --local user.email \"action@github.com\"")
+    # os.system("git config --local user.name \"github-actions\"")
+    # os.system("git add --all")
+    # os.system("git commit -m \"ValiRocket sync\" -a")
+    # os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
 
 except Exception:
     print("Rocket file already exists")
@@ -30,3 +30,10 @@ except Exception:
         f.write("This is a file! Pls find")
 
     print(os.system("ls -a"))
+
+    # Pushing the updated parsed file - QUICK TEST REMOVE LATER
+    os.system("git config --local user.email \"action@github.com\"")
+    os.system("git config --local user.name \"github-actions\"")
+    os.system("git add --all")
+    os.system("git commit -m \"ValiRocket sync\" -a")
+    os.system(f"git push https://{token}@github.com/{git_user}/{repo}.git")
