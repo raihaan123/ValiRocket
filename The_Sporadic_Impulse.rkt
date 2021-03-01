@@ -21,7 +21,7 @@
                     <Material>Polycarbonate (Lexan)</Material>
                     <Name>Polycarbonate Tube</Name>
                     <KnownCG>0.0</KnownCG>
-                    </AttachedParts>
+                    <AttachedParts/>
                 </BodyTube>
                 <BodyTube>
                     <KnownMass>707.3295859557427</KnownMass>
